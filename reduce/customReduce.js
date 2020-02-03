@@ -10,8 +10,8 @@ Array.prototype.customReduce = function(fn, initialValue) {
 }
 
 
-var num = numArr.customReduce((sum, item) => {
-   return sum + item;
+var num = numArr.customReduce((sum, current) => {
+   return sum + current;
 }, 0)
 
 console.log(num);
